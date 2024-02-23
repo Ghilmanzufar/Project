@@ -83,7 +83,7 @@ function ubahJudul(){
     ubahJudul.innerHTML = 'SCORE ANDA';
 
     let ubahIsi = document.getElementById('soal');
-    ubahIsi.innerHTML = '<h4>Jawaban Anda yang betul : </h4>' + `<h4>${JawabanBener()}</h4>` + "<p>Terima Kasih :)</p>";
+    ubahIsi.innerHTML = `<h4>Jawaban Anda yang betul : ${JawabanBener()}</h4>` + "<p>Terima Kasih :)</p>";
 
     let btnNext = document.getElementById('btnNext');
 
