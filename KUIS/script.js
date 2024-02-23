@@ -47,12 +47,6 @@ function setupSoal() {
     }
     
     
-
-    if(curent_Q === 5){
-        document.getElementById('btnPrev').style.display = 'none';
-        document.getElementById('btnNext').style.display = 'none';
-    }
-    console.log(curent_Q)
 }
 
 function nextQuestion(){
@@ -63,23 +57,6 @@ function nextQuestion(){
     if(curent_Q > Quiz.length-1){
         ubahJudul();
     }
-    setupSoal()
-}
-function prevQuestion(){
-    curent_Q--
-    saveAnswer()
-    
-    if(curent_Q < 0){
-        curent_Q = 0;
-    }
-
-    if (curent_Q === 0) {
-        document.querySelector('#btnPrev').style.display = 'none';
-    }else
-    {
-        document.getElementById('btnPrev').style.display = 'block';
-    }
-
     setupSoal()
 }
 
@@ -106,5 +83,12 @@ function ubahJudul(){
     ubahJudul.innerHTML = 'SCORE ANDA';
 
     let ubahIsi = document.getElementById('soal');
-    ubahIsi.innerHTML = '<h4>Jawaban Anda yang betul : </h4>' + `<h4>${JawabanBener()}</h4>` ;
+    ubahIsi.innerHTML = '<h4>Jawaban Anda yang betul : </h4>' + `<h4>${JawabanBener()}</h4>` + "<p>Terima Kasih :)</p>";
+
+    let btnNext = document.getElementById('btnNext');
+
+    if (curent_Q === 5){
+        
+        btnNext.style.display = 'none';
+    }
 }
