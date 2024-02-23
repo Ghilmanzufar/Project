@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Popsins", sans-serif;
+  box-sizing: border-box;
+}
+
+#layar {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(12deg, #312, #4e086f);
+  padding: 10px;
+}
+
+#bingkai {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 40px 70px;
+}
+
+#judul {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#icon {
+  width: 30px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+#btn {
+  margin-top: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
